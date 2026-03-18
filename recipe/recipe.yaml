@@ -1,5 +1,5 @@
 context:
-  version: "0.1.2"
+  version: "0.2.0"
 
 package:
   name: gwframe
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/gwframe/gwframe-${{ version }}.tar.gz
-  sha256: b713401fcf8bbc716a5d74d4a4ca8178694d9ca0d946316135b4e0b597143af3
+  sha256: b3974101ca34de2dfed4f00d1b586f93900c8b85d92990d8994b75848ea761dd
 
 build:
   skip:
     - win
   script: build.sh
-  number: 2
+  number: 0
 
 requirements:
   build:
