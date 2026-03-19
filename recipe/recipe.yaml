@@ -13,7 +13,7 @@ build:
   skip:
     - win
   script: build.sh
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -36,14 +36,13 @@ requirements:
     - libboost-devel
     - ldas-tools-al
     - ldas-tools-cmake
-    - ldas-tools-framecpp 2.9.*
+    - ldas-tools-framecpp
     - openssl
     - zlib
     - zstd
   run:
     - python
     - numpy >=1.26
-    - ldas-tools-framecpp 2.9.*
     - typer >=0.10.0
     - rich >=13.0.0
 
