@@ -13,7 +13,7 @@ build:
   skip:
     - win
   script: build.sh
-  number: 2
+  number: 3
 
 requirements:
   build:
@@ -32,14 +32,8 @@ requirements:
     - scikit-build-core >=0.10
     - nanobind >=2.0.0
     - setuptools-scm >=8.0
-    - numpy >=1.26
-    - libboost-devel
-    - ldas-tools-al
-    - ldas-tools-cmake
     - ldas-tools-framecpp
-    - openssl
-    - zlib
-    - zstd
+    - libboost-headers
   run:
     - python
     - numpy >=1.26
