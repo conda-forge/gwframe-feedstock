@@ -18,8 +18,8 @@ build:
 requirements:
   build:
     - ${{ compiler('c') }}
-    - ${{ stdlib('c') }}
     - ${{ compiler('cxx') }}
+    - ${{ stdlib('c') }}
     - cmake >=3.15
     - make
     - pkg-config
@@ -27,18 +27,18 @@ requirements:
       then:
         - cross-python_${{ target_platform }}
   host:
-    - python
-    - pip
-    - scikit-build-core >=0.10
     - nanobind >=2.0.0
+    - pip
+    - python
+    - scikit-build-core >=0.10
     - setuptools-scm >=8.0
     - ldas-tools-framecpp
     - libboost-headers
   run:
-    - python
     - numpy >=1.26
-    - typer >=0.20.0
+    - python
     - rich >=13.0.0
+    - typer >=0.20.0
 
 tests:
   - python:
