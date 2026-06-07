@@ -13,7 +13,7 @@ build:
   skip:
     - win
   script: build.sh
-  number: 0
+  number: 1
 
 requirements:
   build:
