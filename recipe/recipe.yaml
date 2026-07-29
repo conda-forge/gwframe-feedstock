@@ -1,5 +1,5 @@
 context:
-  version: "0.4.2"
+  version: "0.4.3"
 
 package:
   name: gwframe
@@ -7,11 +7,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/gwframe/gwframe-${{ version }}.tar.gz
-  sha256: b65e0b795dbbf036af6ad4f959e4ad02ea4156d2fe9f8ce6e3a7982883ac86a4
+  sha256: 3ed15768a4b2821e273a4d5722c6f6d168363a3d633b939071f381eeb6d6563f
 
 build:
   skip:
     - win
+    # scikit-build-core is broken on ppc64le free-threading builds, see
+    # https://github.com/conda-forge/pyarrow-feedstock/commit/2d0a9a46
+    - target_platform == "linux-ppc64le" and is_freethreading
   script: build.sh
   number: 0
 
