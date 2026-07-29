@@ -12,6 +12,9 @@ source:
 build:
   skip:
     - win
+    # scikit-build-core is broken on ppc64le free-threading builds, see
+    # https://github.com/conda-forge/pyarrow-feedstock/commit/2d0a9a46
+    - target_platform == "linux-ppc64le" and is_freethreading
   script: build.sh
   number: 0
 
