@@ -16,7 +16,7 @@ build:
     # https://github.com/conda-forge/pyarrow-feedstock/commit/2d0a9a46
     - target_platform == "linux-ppc64le" and is_freethreading
   script: build.sh
-  number: 0
+  number: 1
 
 requirements:
   build:
