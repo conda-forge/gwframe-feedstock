@@ -1,5 +1,5 @@
 context:
-  version: "0.8.0"
+  version: "0.8.1"
 
 package:
   name: gwframe
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/gwframe/gwframe-${{ version }}.tar.gz
-  sha256: 188d439b3228c0b55ed0d318adc23e73258fa830308921a0be634a4a477c93b8
+  sha256: 5d59184536a6f5f89b1ae17ff0037ebc6aacd7a483fcd9200a6fffa131a58a1d
 
 build:
   skip:
@@ -16,7 +16,7 @@ build:
     # https://github.com/conda-forge/pyarrow-feedstock/commit/2d0a9a46
     - target_platform == "linux-ppc64le" and is_freethreading
   script: build.sh
-  number: 1
+  number: 0
 
 requirements:
   build:
