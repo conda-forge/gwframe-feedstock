@@ -1,5 +1,5 @@
 context:
-  version: "0.8.2"
+  version: "0.8.3"
 
 package:
   name: gwframe
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/gwframe/gwframe-${{ version }}.tar.gz
-  sha256: e22a960c5bae3cf4b4b6b28424ff8a50e6002f9640e00a80c2766cb0a1b560df
+  sha256: 647a09bf4d52f294130ab2e25533ac3558c6397a24a41da36dd7d4b692267144
 
 build:
   skip:
